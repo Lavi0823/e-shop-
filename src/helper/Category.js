@@ -1,0 +1,16 @@
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+function Category(props) {
+  return (
+    <div className="col-lg-3 col-md-4 col-sm-6 my-2 text-center">
+        <div className="card">
+            <div className="card-body text-wrap text-capitalize">
+                <NavLink to={`/products/${props.value}`} className="btn">{props.value}</NavLink>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Category
